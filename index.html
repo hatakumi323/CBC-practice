@@ -4,26 +4,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flexテキスト</title>
+    <title>CBC | コーディング</title>
+    <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <style>
-        div,ul {
-            border: 3px solid #fcc;
-            padding: 3px;
-        }
-        div > div,span,li,p {
-            background: #eee;
-            margin: 2px;
-            padding: 0 5px;
-            border: 1px solid #ccc;
-            list-style: none;
-        }
-    </style>
+    <header class="header">
+        <div class="header-wrap">
+            <div class="header-logo">
+                <a href=""><img src="./images/header_logo.svg" alt=""></a>
+            </div><!-- /.header-logo -->
+            <ul class="header-menu">
+                <li><a href="#">ナビ01</a></li>
+                <li><a href="#">ナビ02</a></li>
+                <li><a href="#">ナビ03</a></li>
+                <li><a href="#">ナビ04</a></li>
+            </ul><!-- /.header-menu -->
+        </div><!-- /.header-wrap -->
+    </header><!-- /.header -->
 
-    <div class="container">
-        <div class="box">子要素</div><!-- /.box -->
-    </div><!-- /.container -->
+    <main class="main">
+        <section class="main_ky">
+            むずかしいことを簡単に。<br>
+            つまらないことを面白く。<br>
+            わからないが分かる人に。<br>
+        </section><!-- /.main_ky -->
+
+        <section class="main_about">
+            <h1 class="main_about__title">
+                h1タイトルタイトルタイトルタイトル
+            </h1><!-- /.main_about__title -->
+            <div class="main_about__logo"><img src="./images/header_logo.svg" alt=""></div><!-- /.main_about__logo -->
+            <p class="main_about__text">
+                 テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            </p><!-- /.main_about__text -->
+        </section><!-- /.main_about -->
+
+        <section class="main_service">
+            <div class="main_message">
+                <h2 class="title">
+                    h2title
+                </h2><!-- /.title -->
+                <p class="text">
+                    テキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                    テキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                    テキストテキストテキストテキストテキストテキストテキスト<br>
+                    テキストテキストテキスト
+                </p><!-- /.text -->
+            </div><!-- /.main_message -->
+
+            <ul class="main__service--list">
+                <li>
+                  <a href="">
+                    <img src="images/top_service01.jpg" alt="">
+                    <h3>h3 title01</h3>
+                    <p>テキストテキストテキストテキスト</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="images/top_service02.jpg" alt="">
+                    <h3>h3 title02</h3>
+                    <p>テキストテキストテキストテキスト</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="images/top_service03.jpg" alt="">
+                    <h3>h3 title03</h3>
+                    <p>テキストテキストテキストテキスト</p>
+                  </a>
+                </li>
+              </ul>
+        </section><!-- /.main_service -->
+
+        <section class="main_news">
+            <h2 class="main_news__title">
+                h2タイトル
+            </h2><!-- /.main_news__title -->
+            <ul class="main_news__list">
+                <li>
+                    <a href="">
+                        <dl class="main_news__item">
+                            <dt class="main_news__day">2019.08.20</dt><!-- /.main_news__day -->
+                            <dd class="main_news_data">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd><!-- /.main_news_data -->
+                        </dl><!-- /.main_news__item -->
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <dl class="main_news__item">
+                            <dt class="main_news__day">2019.08.20</dt><!-- /.main_news__day -->
+                            <dd class="main_news_data">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd><!-- /.main_news_data -->
+                        </dl><!-- /.main_news__item -->
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <dl class="main_news__item">
+                            <dt class="main_news__day">2019.08.20</dt><!-- /.main_news__day -->
+                            <dd class="main_news_data">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd><!-- /.main_news_data -->
+                        </dl><!-- /.main_news__item -->
+                    </a>
+                </li>
+            </ul><!-- /.main_news__list -->
+        </section><!-- /.main_news -->
+    </main><!-- /.main -->
+
+    <footer class="footer">
+        <div class="footer_logo"><img src="./images/header_logo.svg" alt=""></div><!-- /.footer_logo -->
+        <div class="footer_copyright">（C）CRI.LTD. 2019</div><!-- /.footer_copyrigth -->
+    </footer><!-- /.footer -->
 </body>
 </html>
