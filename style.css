@@ -1,29 +1,103 @@
+@charset "UTF-8";
+/******************************
+ 初期設定
+******************************/
+body {
+  color: #060606;
+  font-size: 16px;
+  font-family: sans-serif;
+  letter-spacing: 0.06em;
+}
+a{
+  text-decoration: none;
+  color: #060606;
+}
+
+/******************************
+ header CSS
+******************************/
 .header {
     width: 100%;
     padding: 10px;
-    box-shadow:  0 5px 15px rgba(0,0,0,.15);
-}
-
-.header-wrap {
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+  }
+  @media screen and (max-width: 768px) {
+    .header {
+      padding: 10px 0;
+    }
+  }
+  
+  .header__wrap {
     width: 85%;
-    margin: 0 auto;
+    margin:0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.header-logo {
+  }
+  @media screen and (max-width: 768px) {
+    .header__wrap {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+  
+  .header__logo {
     width: 54px;
     height: 76px;
-}
-.header-menu {
+  }
+  @media screen and (max-width: 768px) {
+    .header__logo {
+      width: 40px;
+      margin-bottom: 20px;
+    }
+  }
+  .header__logo a {
+    display: block;
+  }
+  @media screen and (max-width: 768px) {
+    .header__logo a img {
+      width: 100%;
+    }
+  }
+  
+  .header__menu{
+  }
+  @media screen and (max-width: 768px) {
+    .header__menu{
+      width: 100%;
+    }
+  }
+  
+  .header__menu ul {
     display: flex;
-}
-.header-menu ul {
-
-}
-.header-menu li {
+  }
+  @media screen and (max-width: 768px) {
+    .header__menu ul {
+      width: 100%;
+    }
+  }
+  
+  .header__menu ul li {
+    width: 80px;
+  }
+  @media screen and (max-width: 768px) {
+    .header__menu ul li{
+      width: calc(100% / 4);
+    }
+  }
+  
+  .header__menu ul li a{
+    display: block;
     width: 100%;
-}
+    text-align: center;
+  }
+  @media screen and (max-width: 768px) {
+    .header__menu ul li a{
+      font-size: 13px;
+    }
+  }
+  
+
 .main {
     
 }
