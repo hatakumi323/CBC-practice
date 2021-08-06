@@ -1,364 +1,137 @@
-@charset "UTF-8";
-/******************************
- 初期設定
-******************************/
-body {
-  color: #060606;
-  font-size: 16px;
-  font-family: sans-serif;
-  letter-spacing: 0.06em;
+@charset "utf-8";
+body{
+  font:normal 16px/1.8em Arial,Helvetica,sans-serif;;
+  color: #7BC2BA;
 }
 a{
   text-decoration: none;
-  color: #060606;
 }
 
-/******************************
- header CSS
-******************************/
-.header {
-    width: 100%;
-    padding: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,.15);
-  }
-  @media screen and (max-width: 768px) {
-    .header {
-      padding: 10px 0;
-    }
-  }
-  
-  .header__wrap {
-    width: 85%;
-    margin:0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  @media screen and (max-width: 768px) {
-    .header__wrap {
-      flex-direction: column;
-      width: 100%;
-    }
-  }
-  
-  .header__logo {
-    width: 54px;
-    height: 76px;
-  }
-  @media screen and (max-width: 768px) {
-    .header__logo {
-      width: 40px;
-      margin-bottom: 20px;
-    }
-  }
-  .header__logo a {
-    display: block;
-  }
-  @media screen and (max-width: 768px) {
-    .header__logo a img {
-      width: 100%;
-    }
-  }
-  
-  .header__menu{
-  }
-  @media screen and (max-width: 768px) {
-    .header__menu{
-      width: 100%;
-    }
-  }
-  
-  .header__menu ul {
-    display: flex;
-  }
-  @media screen and (max-width: 768px) {
-    .header__menu ul {
-      width: 100%;
-    }
-  }
-  
-  .header__menu ul li {
-    width: 80px;
-  }
-  @media screen and (max-width: 768px) {
-    .header__menu ul li{
-      width: calc(100% / 4);
-    }
-  }
-  
-  .header__menu ul li a{
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-  @media screen and (max-width: 768px) {
-    .header__menu ul li a{
-      font-size: 13px;
-    }
-  }
-  
-
-.main {
-    
+/* ===========================
+ よく使われる枠（後で削除）
+=========================== */
+/*大枠*/
+header,footer,nav,main{
+  margin:2px;
+  border: 2px solid #F00;
 }
-@media screen and (max-width: 768px) {
-    .main {
-        padding-top: 110px;
-    }
+/*小枠*/
+div,ul{
+  margin:2px;
+  border: 2px solid #00F;
+}
+li,form,img,h1,h2{
+  margin:2px;
+  border: 1px solid #0f0;
 }
 
-.main_ky {
-    height: 70vh;
-    height: 70vh;
-  /*add*/
-    display: flex;
-    align-items: center;
-    background: url(./images/top_bg.jpg) center/cover no-repeat;
-    font:normal 24px/1.8 sans-serif;
-    padding-left: 10%;
+
+/* ===========================
+ header
+=========================== */
+header{
+
 }
-@media screen and (max-width: 768px) {
-    .main_ky {
-        height: 50vh;
-        font-size: 18px;
-    }
+.header__contents{
+
+}
+.header__contents--left{
+
+}
+.header__contents--logo{
+
+}
+.header__contents--right{
+
+}
+.header__image{
+
 }
 
-.main_about {
-    width: 85%;
-    margin: 50px auto 200px;
-    padding: 0 10px 80px;
+/* ===========================
+ nav
+=========================== */
+nav{
+
 }
-@media screen and (max-width: 768px) {
-    .main_about {
-        margin: 40px 0 120px;
-    }
+nav ul{
+
+}
+nav ul li{
+
+}
+nav ul li a{
+
 }
 
-.main_about__title {
-    margin-bottom: 60px;
-    text-align: center;
-    color: #060606;
-    font-size: 28px;
-    letter-spacing: 4px;
-    margin-bottom: 60px;
+/* ===========================
+ footer
+=========================== */
+footer{
+
 }
-@media screen and (max-width: 768px) {
-    .main_about__title {
-        margin-bottom: 30px;
-        font-size: 20px;
-    }
+.footer{
+
+}
+.footer h2{
+
+}
+.footer__image{
+
+}
+.footer__column{
+
+}
+.footer__column--form{
+
+}
+.footer__column--form form{
+
+}
+.footer__column--form form input[type="text"]{
+
+}
+.footer__column--form form textarea{
+
+}
+.footer__column--form form input[type="submit"]{
+
+}
+.footer__column--map{
+
+}
+.footer__copy{
+
 }
 
-.main_about__logo {
-    width: 40%;
-    margin: 0 auto;
+/* ===========================
+ コンテンツ
+=========================== */
+main{
+
 }
-@media screen and (max-width: 768px) {
-    .main_about__logo {
-        width: 30%;
-    }
+.menu{
+
+}
+.menu__content{
+
+}
+.menu__content--text{
+
+}
+.menu__content--image{
+
 }
 
-.main_about__text {
-    margin: 45px 0 60px;
-    text-align: center;
-    padding: 0 20px;
-    letter-spacing: 4px;
-    font: normal 16px/2 sans-serif;
-}
-@media screen and (max-width: 768px) {
-    .main_about__text {
-        width: 80%;
-        margin: 30px auto 40px;
-        font-size: 13px;
-    }
-}
+.vision{
 
-.main_service {
-    width: 85%;
-    margin: 0 auto;
-    padding: 20px 20px 100px;
-    background-color: #fffbe8;
 }
-@media screen and (max-width: 768px) {
-    .main_service {
-        padding-bottom: 60px;
-    }
-}
+.vision__image{
 
-.main_message {
-    margin-bottom: 95px;
 }
-.main_message h2 {
-    font-size: 50px;
-    font-weight: bold;
-}
-@media screen and (max-width: 768px) {
-    .main_message h2 {
-        font-size: 30px;
-        text-align: center;
-    }
-}
+.vision__columun{
 
-.main_message p {
-    width: 67%;
-    margin: 40px 0 0 auto;
-    font-size: 12px;
-    line-height: 2.2;
-    letter-spacing: 2px;
 }
-@media screen and (max-width: 768px) {
-    .main_message p {
-        font-size: 14px;
-        margin-top: 30px;
-    }
-}
+.vision__columun--item{
 
-.main__service--list {
-  display: flex;
-}
-@media screen and (max-width: 768px) {
-    .main__service--list {
-        flex-direction: column;
-    }
-}
-
-.main__service--list li{
-  flex:1;
-  /*add*/
-  margin-right: 2%;
-}
-@media screen and (max-width: 768px) {
-    .main__service--list li {
-        width: 100%;
-        margin-bottom: 30px;
-    }
-}
-
-.main__service--list li a{
-  display: block;
-  height: 100%;
-}
-.main__service--list li img{
-  width: 100%;
-  /*add*/
-  display: block;
-}
-.main__service--list h3{
-  margin: 50px 0 30px 0;
-}
-@media screen and (max-width: 768px) {
-    .main__service--list h3 {
-        margin: 10px 0;
-        font-size: 16px;
-    }
-}
-
-.main__service--list li p{
-}
-@media screen and (max-width: 768px) {
-    .main__service--list li p {
-        font-size: 13px;
-    }
-}
-
-.main_news {
-    width: 85%;
-    margin: 0 auto;
-    padding: 0 20px 0;
-}
-@media screen and (max-width: 768px) {
-    .main_news {
-        padding: 50px 0 0;
-    }
-}
-
-.main_news__title {
-    margin-bottom: 16px;
-    padding-top: 120px;
-    font-size: 48px;
-}
-@media screen and (max-width: 768px) {
-    .main_news__title {
-        font-size: 30px;
-        text-align: center;
-    }
-}
-
-.main_news__list {
-    padding: 40px 12px;
-    border-top: 1px solid #a7b7bf;
-}
-.main_news__list li {
-    border-bottom: 1px solid #e8ecee;
-}
-.main_news__list li:first-child {
-    border-bottom: 1px solid #e8ecee;
-}
-.main_news__list a {
-    display: block;
-    padding: 50px 20px;
-}
-@media screen and (max-width: 768px) {
-    .main_news__list a {
-        display: block;
-        padding: 24px 12px;
-    }
-}
-
-.main_news__list li a:hover {
-    background: #e8ecee;
-}
-.main_news__item {
-    display: flex;
-}
-@media screen and (max-width: 768px) {
-    .main_news__item {
-        flex-direction: column;
-        line-height: 1.6;
-    }
-}
-
-.main_news__day {
-    width: 264px;
-    display: flex;
-    align-items: center;
-    margin-right: 32px;
-}
-@media screen and (max-width: 768px) {
-    .main_news__day {
-        width: 100%;
-        margin-bottom: 8px;
-    }
-}
-
-.main_news__data {
-    line-height: 1.8;
-}
-@media screen and (max-width: 768px) {
-    .main_news__data {
-        margin-right: 0;
-    }
-}
-
-.footer {
-    padding: 90px 0 71px;
-    border-top: 1px solid #e8ecee;
-}
-@media screen and (max-width: 768px) {
-    .footer {
-        margin-top: 50px;
-    }
-}
-
-.footer_logo {
-    width: 100px;
-    margin: 0 auto;
-}
-.footer_copyright {
-    color: #b5b5b5;
-    font-size: 11px;
-    margin-top: 31px;
-    text-align: center;
 }
