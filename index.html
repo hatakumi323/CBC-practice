@@ -3,127 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Site Sample</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
 
-    <header>
-    <div class="header__contents">
-      <div class="header__contents--text text-right">
-        Professional Skills in<br>the Engineering Curriculum.
-      </div>
-      <div class="header__contents--logo">
-        <p class="header__contents--logo-mark"><img src="./images/logo.png" alt="CBC logo"></p>
-        <p><img src="./images/logo-bagde.png" alt="CRI BOOT CAMP"></p>
-      </div>
-      <div class="header__contents--text">
-        プロフェッショナルになるための<br>“挫折しない”トレーニングメソッド
-      </div>
+  <section>
+    <div id="change_btn">ボタン</div>
+    <div id="box">
+    クリックをトリガーとして文字の色を変更するサンプルです。<br>
+    これは"changeColor_btn"というクラスがついている要素をクリックした時に<br>
+    "box"というidがついている要素内の文字色を変更しています。
     </div>
-    <div class="header__image">
-      <img src="./images/badge.png">
-    </div>
-    </header>
-    
-    <nav>
-      <ul>
-        <li><a href="">home</a></li>
-        <li><a href="">beginner</a></li>
-        <li><a href="">basic</a></li>
-        <li><a href="">advanced</a></li>
-        <li><a href="">design</a></li>
-        <li><a href="">performance</a></li>
-        <li><a href="">kids</a></li>
-      </ul>
-    </nav>
-    
-    <main>
-    <section class="menu">
-      <div class="menu__content">
-        <div class="menu__content--text">
-          <img src="./images/title_cording.png" alt="cording">
-          <h1>Title</h1>
-          <p>ここはコンテンツの説明を入力していきます。魅力的な文章を追加して、ユーザーにコンテンツの内容を理科してもらいましょう。</p>
-          <div class="btn"><a href="">MENU</a></div>
-        </div>
-        <div class="menu__content--image img-cording"></div>
-      </div>
-      <div class="menu__content">
-        <div class="menu__content--image img-design"></div>
-        <div class="menu__content--text">
-          <img src="./images/title_design.png" alt="design">
-          <h1>Title</h1>
-          <p>ここはコンテンツの説明を入力していきます。魅力的な文章を追加して、ユーザーにコンテンツの内容を理科してもらいましょう。</p>
-          <div class="btn"><a href="">MENU</a></div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="vision">
-      <div class="vision__image">
-        <h1>ブラウザやテキストエディタ等ツールのインストールや、<br>html・CSSとはなにかを学び、<br>簡単なサイトを作りながらコーダーを目指します。</h1>
-        <p><img src="./images/be-pro.png" alt="Be Professional"></p>
-      </div>
-    
-      <div class="vision__columun">
-        <div class="vision__columun--item">
-          <p class="vision__columun--item-img"><img src="./images/contents_cording.png" alt="cording image"></p>
-          <p>
-          ここはコンテンツの説明を入力していきます。魅力的な文章を追加して、ユーザーにコンテンツの内容を理科してもらいましょう。
-          ここはコンテンツの説明を入力していきます。魅力的な文章を追加して、ユーザーにコンテンツの内容を理科してもらいましょう。
-          </p>
-        </div>
-        <div class="vision__columun--item">
-          <p class="vision__columun--item-img"><img src="./images/contents_design.png" alt="design image"></p>
-          <p>
-          ここはコンテンツの説明を入力していきます。魅力的な文章を追加して、ユーザーにコンテンツの内容を理科してもらいましょう。
-          ここはコンテンツの説明を入力していきます。魅力的な文章を追加して、ユーザーにコンテンツの内容を理科してもらいましょう。
-          </p>
-        </div>
-        <div class="vision__columun--item">
-          <p class="vision__columun--item-img"><img src="./images/contents_analytics.png" alt="analytics image"></p>
-          <p>
-          ここはコンテンツの説明を入力していきます。魅力的な文章を追加して、ユーザーにコンテンツの内容を理科してもらいましょう。
-          ここはコンテンツの説明を入力していきます。魅力的な文章を追加して、ユーザーにコンテンツの内容を理科してもらいましょう。
-          </p>
-        </div>
-      </div>
-    </section>
-    </main>
-    
-    <footer>
-    <div class="footer">
-      <div class="footer__image"></div>
-      <h2>Location & Contact</h2>
-    
-      <div class="footer__column">
-        <div class="footer__column--form">
-          <form action="send.php" method="POST">
-            <p>ご予約やお問い合わせはこちらのフォームを<br>ご利用ください。個人情報保護方針について</p>
-            お名前<br>
-            <input type="text" name="inputName">
-            メールアドレス<br>
-            <input type="text" name="inputMail">
-            問い合わせ内容<br>
-            <textarea name="toiawase"></textarea>
-            <input type="submit" value="送信">
-          </form>
-        </div>
-        <div class="footer__column--map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d810.4161765212042!2d139.66673032925627!3d35.660631688388975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f4ab6ef28945%3A0xed98990ae6e1597b!2z5qCq5byP5Lya56S-44Kv44Oq44Ko44Kk44OG44Kj44OW44Oq44K944O844K544Kk44Oz44K544OG44Kj44OB44Ol44O844OI!5e0!3m2!1sja!2sjp!4v1571382479874!5m2!1sja!2sjp" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-          <div>
-          〒000-0000 東京都世田谷区 0-0-0<br>
-          TEL. 03-0000-0000<br>
-          OPENING HOURS: 12:00 PM – 11:00 PM
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer__copy">© 2019 Created by CBC</div>
-    </footer>
-    
-    </body>
+  </section>
+  
+  <script src="./js/main.js"></script>
+</body>
 </html>
