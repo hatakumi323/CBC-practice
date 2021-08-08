@@ -8,25 +8,6 @@ a{
 }
 
 /* ===========================
- よく使われる枠（後で削除）
-=========================== */
-/*大枠*/
-header,footer,nav,main{
-  margin:2px;
-  border: 2px solid #F00;
-}
-/*小枠*/
-div,ul{
-  margin:2px;
-  border: 2px solid #00F;
-}
-li,form,img,h1,h2{
-  margin:2px;
-  border: 1px solid #0f0;
-}
-
-
-/* ===========================
  header
 =========================== */
 header{
@@ -34,14 +15,16 @@ header{
 }
 .header__contents{
     width: 1200px;
-    margin: 0 auto;
+    margin: 43px auto 88px;
     display: flex;
     justify-content: center;
-    height: 250px;
 }
 .header__contents--text {
     align-self: flex-end;
     margin: 0 30px;
+    width: 25%;
+    border-top: 1px solid #7bc2ba;
+    border-bottom: 1px solid #7bc2ba;
 }
 .text-right {
     text-align: right;
@@ -52,11 +35,21 @@ header{
 .header__contents--logo{
     text-align: center;
 }
+.header__contents--logo-mark {
+    margin-bottom: 20px;
+}
 .header__contents--right{
 
 }
 .header__image{
+    position: relative;
     height: 600px;
+    background: #7bc2ba url("../images/bg_header.jpg") no-repeat right center / cover;
+}
+.header__image img {
+    position: absolute;
+    top: -60px;
+    right: 5vw;
 }
 
 /* ===========================
@@ -73,7 +66,7 @@ nav ul{
 }
 nav ul li{
     width: 120px;
-    height: 50px;
+    height: 60px;
 }
 nav ul li a{
     display: flex;
@@ -91,6 +84,7 @@ footer{
 }
 .footer{
     color: #fff;
+    padding: 60px 0 70px;
     background-color: #7bc2ba;
 }
 .footer h2{
@@ -100,6 +94,7 @@ footer{
 .footer__image{
     width: 100%;
     height: 600px;
+    background: #7BC2BA url("../images/bg_footer.jpg") no-repeat center center / cover;
 }
 .footer__column{
     width: 1200px;
@@ -115,7 +110,7 @@ footer{
     margin: 10px auto 0;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
 }
 .footer__column--form form p {
     margin-bottom: 15px;
@@ -128,18 +123,20 @@ footer{
     border: none;
 }
 .footer__column--form form textarea{
+    margin: 0 0 20px 0;
+    padding: 10px;
     height: 8em;
     font-size: 1.3em;
     border-radius: 5px;
-    margin: 0 0 20px 0;
     border: none;
-}
-.footer__column--form form input[type="submit"]{
-
 }
 .footer__column--map{
     flex: 1;
     text-align: left;
+}
+.footer__column--map iframe {
+    width: 500px;
+    height: 450px;
 }
 .footer__copy{
     font-size: 0.8em;
@@ -160,14 +157,13 @@ main{
 .menu__content{
     display: flex;
     text-align: center;
-    width: 1200px;
-    height: 600px;
 }
 .menu__content--text{
     flex: 1;
 }
 .menu__content--text img{
-
+    margin-top: 80px;
+    text-align: center;
 }
 .menu__content--text h1{
     margin: 20px 0 50px;
@@ -177,12 +173,19 @@ main{
     width: 65%;
     margin: 0 auto 20px;
 }
+.img-cording {
+    background: url("../images/menu_cording.jpg") no-repeat center center / cover;
+}
+.img-design {
+    background: url("../images/menu_design.jpg") no-repeat center center / cover;
+}
 .menu__content--image{
     flex: 1;
+    height: 600px;
 }
 
 .vision{
-
+    position: relative;
 }
 .vision__image{
     display: flex;
@@ -191,13 +194,27 @@ main{
     flex-direction: column;
     border-top: 60px solid #7bc2ba;
     height: 600px;
+    background: #7bc2ba url("../images/bg_contents.jpg") no-repeat center center /cover;
 }
-.vision__image h1 {
-    font: bold 32px/2.3em sans-serif;
-    text-align: center;
+.vision__image::before{
+    height:600px;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: ' ';
+  }
+.vision__image h1{
+  font:bold 31px/2.3em sans-serif;
+  text-align:center;
+  color:#fff;
+  z-index:99;
 }
 .vision__image P{
     margin-top: 75px;
+    z-index: 99;
 }
 .vision__columun{
     width: 1200px;
@@ -207,7 +224,14 @@ main{
 }
 .vision__columun--item{
     width: 30%;
+    text-align: left;
+}
+.vision__columun--item-img {
+    margin: 0 0 50px;
     text-align: center;
+}
+.vision__columun--item-img img {
+    height: 200px;
 }
 
 /* 共有 */
