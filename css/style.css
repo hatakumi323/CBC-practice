@@ -1,0 +1,227 @@
+@charset "utf-8";
+body{
+  font:normal 16px/1.8em Arial,Helvetica,sans-serif;;
+  color: #7BC2BA;
+}
+a{
+  text-decoration: none;
+}
+
+/* ===========================
+ よく使われる枠（後で削除）
+=========================== */
+/*大枠*/
+header,footer,nav,main{
+  margin:2px;
+  border: 2px solid #F00;
+}
+/*小枠*/
+div,ul{
+  margin:2px;
+  border: 2px solid #00F;
+}
+li,form,img,h1,h2{
+  margin:2px;
+  border: 1px solid #0f0;
+}
+
+
+/* ===========================
+ header
+=========================== */
+header{
+    border-top: 20px solid #7bc2ba;
+}
+.header__contents{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    height: 250px;
+}
+.header__contents--text {
+    align-self: flex-end;
+    margin: 0 30px;
+}
+.text-right {
+    text-align: right;
+}
+.header__contents--left{
+
+}
+.header__contents--logo{
+    text-align: center;
+}
+.header__contents--right{
+
+}
+.header__image{
+    height: 600px;
+}
+
+/* ===========================
+ nav
+=========================== */
+nav{
+    background-color: #7bc2ba;
+}
+nav ul{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li{
+    width: 120px;
+    height: 50px;
+}
+nav ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+
+/* ===========================
+ footer
+=========================== */
+footer{
+    text-align: center;
+}
+.footer{
+    color: #fff;
+    background-color: #7bc2ba;
+}
+.footer h2{
+    font-size: 50px;
+    margin: 30px auto 80px;
+}
+.footer__image{
+    width: 100%;
+    height: 600px;
+}
+.footer__column{
+    width: 1200px;
+    display: flex;
+    margin: 40px auto 100px;
+}
+.footer__column--form{
+    flex: 1;
+    width: 60%;
+}
+.footer__column--form form{
+    width: 60%;
+    margin: 10px auto 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.footer__column--form form p {
+    margin-bottom: 15px;
+}
+.footer__column--form form input[type="text"]{
+    margin: 0 0 20px 0;
+    padding: 5px 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: none;
+}
+.footer__column--form form textarea{
+    height: 8em;
+    font-size: 1.3em;
+    border-radius: 5px;
+    margin: 0 0 20px 0;
+    border: none;
+}
+.footer__column--form form input[type="submit"]{
+
+}
+.footer__column--map{
+    flex: 1;
+    text-align: left;
+}
+.footer__copy{
+    font-size: 0.8em;
+    padding: 20px 0;
+    color: #aaa;
+}
+
+/* ===========================
+ コンテンツ
+=========================== */
+main{
+
+}
+.menu{
+    width: 1200px;
+    margin: 0 auto;
+}
+.menu__content{
+    display: flex;
+    text-align: center;
+    width: 1200px;
+    height: 600px;
+}
+.menu__content--text{
+    flex: 1;
+}
+.menu__content--text img{
+
+}
+.menu__content--text h1{
+    margin: 20px 0 50px;
+    font-size: 1.3em;
+}
+.menu__content--text p {
+    width: 65%;
+    margin: 0 auto 20px;
+}
+.menu__content--image{
+    flex: 1;
+}
+
+.vision{
+
+}
+.vision__image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 60px solid #7bc2ba;
+    height: 600px;
+}
+.vision__image h1 {
+    font: bold 32px/2.3em sans-serif;
+    text-align: center;
+}
+.vision__image P{
+    margin-top: 75px;
+}
+.vision__columun{
+    width: 1200px;
+    margin: 80px auto 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.vision__columun--item{
+    width: 30%;
+    text-align: center;
+}
+
+/* 共有 */
+
+.btn a,
+input[type="submit"] {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 130px;
+    cursor: pointer;
+    font-size: 1.3em;
+    color: #58847f;
+    text-align: center;
+    border: 10px solid #58847f;
+    background-color: transparent;
+}
