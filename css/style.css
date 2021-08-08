@@ -29,27 +29,54 @@ header{
 .text-right {
     text-align: right;
 }
-.header__contents--left{
-
-}
 .header__contents--logo{
     text-align: center;
 }
 .header__contents--logo-mark {
     margin-bottom: 20px;
 }
-.header__contents--right{
-
-}
 .header__image{
     position: relative;
-    height: 600px;
+    height: 60vh;
     background: #7bc2ba url("../images/bg_header.jpg") no-repeat right center / cover;
 }
 .header__image img {
     position: absolute;
     top: -60px;
     right: 5vw;
+}
+
+@media screen and (max-width: 1215px) {
+    .header__contents {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .header__contents {
+        display: block;
+        margin-top: 240px;
+        position: relative;
+    }
+    .header__contents--text {
+        margin: 0 auto;
+        width: 90%;
+    }
+    .text-right {
+        text-align: left;
+        border-bottom: none;
+    }
+    .header__contents--logo {
+        position: absolute;
+        top: -228px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .header__image {
+        position: relative;
+        height: 40vh;
+        background: #7bc2ba url("../images/bg_header.jpg") no-repeat right center / cover;
+    }
 }
 
 /* ===========================
@@ -74,6 +101,24 @@ nav ul li a{
     align-items: center;
     height: 100%;
     color: #fff;
+}
+
+@media screen and (max-width: 1215px) {
+    nav ul {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    nav ul {
+        flex-wrap: wrap;
+    }
+    nav ul li {
+        margin: 6px 0;
+    }
+    nav ul li a {
+        border: 1px solid #fff;
+    } 
 }
 
 /* ===========================
@@ -144,6 +189,44 @@ footer{
     color: #aaa;
 }
 
+@media screen and (max-width: 1215px) {
+    .footer__column {
+        width: 100%;
+    }
+    .footer__column--map {
+        margin: 0 auto;
+        width: 97%;
+    }
+    .footer__column--map iframe {
+        width: 40vw;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .footer h2 {
+        font-size: 2em;
+    }
+    .footer__image {
+        height: 40vh;
+    }
+    .footer__column {
+        display: block;
+    }
+    .footer__column--form {
+        flex: 1;
+        width: 100%;
+    }
+    .footer__column--form {
+        width: 80%;
+    }
+    .footer__column--map iframe {
+        width: 90%;
+        margin: 50px auto 0;
+        text-align: center;
+    }
+}
+
 /* ===========================
  コンテンツ
 =========================== */
@@ -182,6 +265,44 @@ main{
 .menu__content--image{
     flex: 1;
     height: 600px;
+}
+
+@media screen and (max-width: 1215px) {
+    .menu {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .menu {
+        margin: 30px auto 0;
+    }
+    .menu__content {
+        display: block;
+        position: relative;
+    }
+    .menu__content--text {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 99;
+    }
+    .menu__content--image {
+        position: relative;
+        margin-bottom: 2px;
+    }
+    .menu__content--image::before {
+        height: 600px;
+        background-color: rgba(0,0,0,0.6);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: '';
+    }
 }
 
 .vision{
@@ -232,6 +353,35 @@ main{
 }
 .vision__columun--item-img img {
     height: 200px;
+}
+
+@media screen and (max-width: 1215px) {
+    .vision__columun {
+        width: 97%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .vision {
+        margin-top: 50px;
+    }
+    .vision__image h1 {
+        font: bold 1.6em/1.9em sans-serif;
+    }
+    .vision__columun {
+        width: 90%;
+        margin: 10px auto;
+        display: block;
+    }
+    .vision__columun--item {
+        width: 90%;
+        margin-top: 40px;
+        text-align: left;
+    }
+    .vision__columun--item-img {
+        margin: 0 0 10px;
+        text-align: center;
+    }
 }
 
 /* 共有 */
