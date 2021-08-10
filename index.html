@@ -3,127 +3,167 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Site Sample</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+  
+  <header class="header">
+    <ul class="header_sns">
+      <li><a href="#">画像</a></li>
+      <li><a href="#">画像</a></li>
+    </ul><!-- /.header_sns -->
+    <ul class="header__navi">
+      <li><a href="#">PHILOSOPHY</a></li>
+      <li><a href="#">NEWS</a></li>
+      <li><a href="#">MENU</a></li>
+      <li><a href="#">ACCESS</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul><!-- /.header__navi -->
+  </header><!-- /.header -->
 
-    <header>
-    <div class="header__contents">
-      <div class="header__contents--text text-right">
-        Professional Skills in<br>the Engineering Curriculum.
-      </div>
-      <div class="header__contents--logo">
-        <p class="header__contents--logo-mark"><img src="./images/logo.png" alt="CBC logo"></p>
-        <p><img src="./images/logo-bagde.png" alt="CRI BOOT CAMP"></p>
-      </div>
-      <div class="header__contents--text">
-        プロフェッショナルになるための<br>“挫折しない”トレーニングメソッド
-      </div>
+<section class="logo">
+  <h1>画像</h1>
+</section><!-- /.logo -->
+
+<section class="philosophy">
+  <div class="philosophy__left">
+    <div>
+      <h2 class="philosophy__left-title">
+        PHILOSOPHY
+      </h2><!-- /.philosophy__left-title -->
+      <p class="PHILOSOPHY__left-top">
+          たまには、贅沢を<br>
+          たまには、わがままを<br>
+          たまには、ごちそうを
+      </p><!-- /.PHILOSOPHY__left-top -->
+      <p class="PHILOSOPHY__left-bottom">
+          その日仕入れた新鮮な食材を、お好きな調理法で、<br>
+          ジャンルを超えた様々な料理をおとどけいたします。<br>
+          美容や健康のもととなるお食事を、<br>
+          楽しく、おいしくお召し上がりください。
+      </p><!-- /.PHILOSOPHY__left-bottom -->
+      <div class="philosophy__button">
+        <a href="#">MORE</a>
+      </div><!-- /.philosophy__button -->
     </div>
-    <div class="header__image">
-      <img src="./images/badge.png">
-    </div>
-    </header>
-    
-    <nav>
+  </div><!-- /.philosophy -->
+  <div class="philosophy__right">CSSで背景画像を指定</div><!-- /.philosophy__right -->
+</section><!-- /.philosophy -->
+
+<section class="news">
+  <h2 class="news__title">NEWS<span>今日のおすすめ食材などニュースを発信</span></h2><!-- /.news__title -->
+  <ul class="news__list">
+    <li>
+      <a href="#"><span class="news__list-img">画像</span><!-- /.news__list-img -->
+        <div class="news__list-text">
+          <dl>
+            <dt>夏季休業のお知らせ</dt>
+            <dd>Jul 18,2019</dd>
+          </dl>
+        </div><!-- /.news__list-text -->
+      </a>
+    </li>
+    <li>
+      <a href="#"><span class="news__list-img">画像</span><!-- /.news__list-img -->
+        <div class="news__list-text">
+          <dl>
+            <dt>夏季休業のお知らせ</dt>
+            <dd>Jul 18,2019</dd>
+          </dl>
+        </div><!-- /.news__list-text -->
+      </a>
+    </li>
+    <li>
+      <a href="#"><span class="news__list-img">画像</span><!-- /.news__list-img -->
+        <div class="news__list-text">
+          <dl>
+            <dt>夏季休業のお知らせ</dt>
+            <dd>Jul 18,2019</dd>
+          </dl>
+        </div><!-- /.news__list-text -->
+      </a>
+    </li>
+  </ul><!-- /.news__list -->
+  <div class="news__button">
+    <a href="#">MORE</a>
+  </div><!-- /.news__button -->
+</section><!-- /.news -->
+
+<section class="instagram">
+  <h2 class="instagram__title">INSTAGRAM</h2><!-- /.instagram__title -->
+  <ul class="instagram__list">
+    <li>
+      <a href="#">
+        <div class="instagram__list-img">画像が入ります</div><!-- /.instagram__list-img -->
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <div class="instagram__list-img">画像が入ります</div><!-- /.instagram__list-img -->
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <div class="instagram__list-img">画像が入ります</div><!-- /.instagram__list-img -->
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <div class="instagram__list-img">画像が入ります</div><!-- /.instagram__list-img -->
+      </a>
+    </li>
+  </ul><!-- /.instagram__list -->
+  <div class="instagram_button">
+    <a href="#">FOLLOW US</a>
+  </div><!-- /.instagram_button -->
+</section><!-- /.instagram -->
+
+<section class="access">
+  <h2 class="access__title">ACCESS</h2><!-- /.access__title -->
+  <div class="access__map">google mapが入ります。</div><!-- /.access__map -->
+  <div class="access__dateil">
+    <dl>
+      <dt>住所</dt>
+      <dd>〒155-0031 東京都世田谷区北沢２丁目１９−５</dd>
+    </dl>
+    <dl>
+      <dt>アクセス</dt>
+      <dd>
+        <div>井の頭線「下北沢駅」東口より徒歩1分</div>
+          <div>小田急小田原線「下北沢駅」東口より徒歩1分</div>
+      </dd>
+    </dl>
+    <dl>
+      <dt>営業時間</dt>
+      <dd>平日：10:30〜19:30</dd>
+    </dl>
+    <dl>
+      <dt>定休日</dt>
+      <dd>土曜・日曜・祝日</dd>
+    </dl>
+  </div><!-- /.access__dateil -->
+</section><!-- /.access -->
+
+<footer class="footer">
+  <div class="footer__inner">
+    <ul class="footer__inner-navi">
+      <li><a href="#">PHILOSOPHY</a></li>
+      <li><a href="#">NEWS</a></li>
+      <li><a href="#">MENU</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul><!-- /.footer__inner-navi -->
+    <div class="footer__inner-sns">
       <ul>
-        <li><a href="">home</a></li>
-        <li><a href="">beginner</a></li>
-        <li><a href="">basic</a></li>
-        <li><a href="">advanced</a></li>
-        <li><a href="">design</a></li>
-        <li><a href="">performance</a></li>
-        <li><a href="">kids</a></li>
+        <li><a href="#">画像</a></li>
+        <li><a href="#">画像</a></li>
       </ul>
-    </nav>
-    
-    <main>
-    <section class="menu">
-      <div class="menu__content">
-        <div class="menu__content--text">
-          <img src="./images/title_cording.png" alt="cording">
-          <h1>Title</h1>
-          <p>ここはコンテンツの説明を入力していきます。魅力的な文章を追加して、ユーザーにコンテンツの内容を理科してもらいましょう。</p>
-          <div class="btn"><a href="">MENU</a></div>
-        </div>
-        <div class="menu__content--image img-cording"></div>
-      </div>
-      <div class="menu__content">
-        <div class="menu__content--image img-design"></div>
-        <div class="menu__content--text">
-          <img src="./images/title_design.png" alt="design">
-          <h1>Title</h1>
-          <p>ここはコンテンツの説明を入力していきます。魅力的な文章を追加して、ユーザーにコンテンツの内容を理科してもらいましょう。</p>
-          <div class="btn"><a href="">MENU</a></div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="vision">
-      <div class="vision__image">
-        <h1>ブラウザやテキストエディタ等ツールのインストールや、<br>html・CSSとはなにかを学び、<br>簡単なサイトを作りながらコーダーを目指します。</h1>
-        <p><img src="./images/be-pro.png" alt="Be Professional"></p>
-      </div>
-    
-      <div class="vision__columun">
-        <div class="vision__columun--item">
-          <p class="vision__columun--item-img"><img src="./images/contents_cording.png" alt="cording image"></p>
-          <p>
-          ここはコンテンツの説明を入力していきます。魅力的な文章を追加して、ユーザーにコンテンツの内容を理科してもらいましょう。
-          ここはコンテンツの説明を入力していきます。魅力的な文章を追加して、ユーザーにコンテンツの内容を理科してもらいましょう。
-          </p>
-        </div>
-        <div class="vision__columun--item">
-          <p class="vision__columun--item-img"><img src="./images/contents_design.png" alt="design image"></p>
-          <p>
-          ここはコンテンツの説明を入力していきます。魅力的な文章を追加して、ユーザーにコンテンツの内容を理科してもらいましょう。
-          ここはコンテンツの説明を入力していきます。魅力的な文章を追加して、ユーザーにコンテンツの内容を理科してもらいましょう。
-          </p>
-        </div>
-        <div class="vision__columun--item">
-          <p class="vision__columun--item-img"><img src="./images/contents_analytics.png" alt="analytics image"></p>
-          <p>
-          ここはコンテンツの説明を入力していきます。魅力的な文章を追加して、ユーザーにコンテンツの内容を理科してもらいましょう。
-          ここはコンテンツの説明を入力していきます。魅力的な文章を追加して、ユーザーにコンテンツの内容を理科してもらいましょう。
-          </p>
-        </div>
-      </div>
-    </section>
-    </main>
-    
-    <footer>
-    <div class="footer">
-      <div class="footer__image"></div>
-      <h2>Location & Contact</h2>
-    
-      <div class="footer__column">
-        <div class="footer__column--form">
-          <form action="send.php" method="POST">
-            <p>ご予約やお問い合わせはこちらのフォームを<br>ご利用ください。個人情報保護方針について</p>
-            お名前<br>
-            <input type="text" name="inputName">
-            メールアドレス<br>
-            <input type="text" name="inputMail">
-            問い合わせ内容<br>
-            <textarea name="toiawase"></textarea>
-            <input type="submit" value="送信">
-          </form>
-        </div>
-        <div class="footer__column--map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d810.4161765212042!2d139.66673032925627!3d35.660631688388975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f4ab6ef28945%3A0xed98990ae6e1597b!2z5qCq5byP5Lya56S-44Kv44Oq44Ko44Kk44OG44Kj44OW44Oq44K944O844K544Kk44Oz44K544OG44Kj44OB44Ol44O844OI!5e0!3m2!1sja!2sjp!4v1571382479874!5m2!1sja!2sjp" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-          <div>
-          〒000-0000 東京都世田谷区 0-0-0<br>
-          TEL. 03-0000-0000<br>
-          OPENING HOURS: 12:00 PM – 11:00 PM
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer__copy">© 2019 Created by CBC</div>
-    </footer>
-    
-    </body>
+      <div class="copyright">© 2019 CRI Inc</div><!-- /.copyright -->
+    </div><!-- /.footer__inner-sns -->
+  </div><!-- /.footer__inner -->
+</footer><!-- /.footer -->
+
+</body>
 </html>
