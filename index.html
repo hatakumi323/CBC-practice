@@ -5,8 +5,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <!-- css -->
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
+  
+  <!-- slick-slider -->
+  <link rel="stylesheet" href="./css/slick-theme.css">
+  <link rel="stylesheet" href="./css/slick.css">
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+
+  <script>
+    $(document).on('ready', function() {
+      $(".regular").slick({
+        dots: true,
+        autoplay: true,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4
+      });
+    });
+    </script>
 
 </head>
 <body>
@@ -56,7 +76,46 @@
 
 <section class="news">
   <h2 class="news__title">NEWS<span>今日のおすすめ食材などニュースを発信</span></h2><!-- /.news__title -->
-  <ul class="news__list">
+  <ul class="news__list regular slider">
+    <li>
+      <a href="#">
+        <div class="news__list-img">
+          <img src="./images/news01.jpg" alt="">
+        </div><!-- /.news__list-img -->
+        <div class="news__list-text">
+          <dl>
+            <dt>夏季休業のお知らせ</dt>
+            <dd>Jul 18,2019</dd>
+          </dl>
+        </div><!-- /.news__list-text -->
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <div class="news__list-img">
+          <img src="./images/news02.jpg" alt="">
+        </div><!-- /.news__list-img -->
+        <div class="news__list-text">
+          <dl>
+            <dt>夏季休業のお知らせ</dt>
+            <dd>Jul 18,2019</dd>
+          </dl>
+        </div><!-- /.news__list-text -->
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <div class="news__list-img">
+          <img src="./images/news03.jpg" alt="">
+        </div><!-- /.news__list-img -->
+        <div class="news__list-text">
+          <dl>
+            <dt>夏季休業のお知らせ</dt>
+            <dd>Jul 18,2019</dd>
+          </dl>
+        </div><!-- /.news__list-text -->
+      </a>
+    </li>
     <li>
       <a href="#">
         <div class="news__list-img">
@@ -188,6 +247,7 @@
     </div><!-- /.footer__inner-sns -->
   </div><!-- /.footer__inner -->
 </footer><!-- /.footer -->
+
 
 </body>
 </html>

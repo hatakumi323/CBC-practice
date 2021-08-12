@@ -327,6 +327,29 @@ body{
       color: #242424;
   }
 
+  .slider {
+    width: 80%;
+    margin: 100px auto;
+  }
+  .slick-slide {
+    margin: 0px 20px;
+    transition: all ease-in-out .3s;
+    opacity: .2;
+  }
+  .slick-slide img {
+    width: 100%;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    color: black;
+  }
+  .slick-active {
+    opacity: .5;
+  }
+  .slick-current {
+    opacity: 1;
+  }
+
   /* instagram */
 
   .instagram {
